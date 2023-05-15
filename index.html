@@ -10,19 +10,30 @@
 </head>
 
 <body>
-    <header>
-        헤더
-    </header>
-    <div class="mainLayout">
-        <section class="folder">
-            폴더
-        </section>
-        <div class="listLayout">
-            목록
+    <div class="memoList">
+        <div class="memoMenu top">
+            <button class="deleteBtn">🗑️</button>
         </div>
-        <div class="memoContents">
-            메모 내용
+        <div class="note">
+            <ul class="button-list">
+                <li class="buttonClick">
+                    <div class="btnTitle">제목</div>
+                    <div class="timePreview">
+                        <div class="btnTime">날짜/시간</div>
+                        <div class="btnPreview">내용 미리보기</div>
+                    </div>
+                </li>
+            </ul>
         </div>
+    </div>
+    <div class="memoMain">
+        <div class="mainMenu top">
+            <button class="newBtn">✍️</button>
+        </div>
+        <textarea class="mainContents" placeholder="메모를 입력하세요"></textarea>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
