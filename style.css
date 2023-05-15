@@ -1,0 +1,27 @@
+body {
+    color: white;
+    background-color: #222222;
+}
+
+.mainLayout {
+    display: flex;
+}
+
+header {
+    height: 50px;
+}
+
+.folder {
+    flex-grow: 1;
+}
+
+.listLayout {
+    background-color: #444444;
+    height: 100%;
+    width: 300px;
+    flex-grow: 1;
+}
+
+.memoContents {
+    flex-grow: 2;
+}
