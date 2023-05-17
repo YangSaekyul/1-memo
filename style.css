@@ -2,38 +2,44 @@ body {
     display: flex;
     margin: 0;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+    background-color: #333333;
+    color: #FFFFFF;
 }
 
 .memoList {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    background-color: #ACB1D6;
+    background-color: #222222;
 }
 
 .deleteBtn {
     margin-left: auto;
+    color: #FFFFFF;
 }
 
 .memoMain {
     flex-grow: 3;
     display: flex;
     flex-direction: column;
-    background-color: #ACB1D6;
+    background-color: #222222;
 }
 
 .note {
-    background-color: #ACB1D6;
+    background-color: #222222;
+    overflow-y: auto;
 }
 
 .mainContents {
-    background-color: #8294C4;
+    background-color: #111111;
     font-size: 160%;
     padding: 20px;
+    color: #FFFFFF;
 }
 
 button:active {
-    background-color: #FFEAD2;
+    background-color: #444444;
 }
 
 .note,
@@ -44,20 +50,19 @@ button:active {
 .top {
     padding: 10px;
     height: 40px;
-    border-bottom: 1.5px solid black;
-    border-right: 1.5px solid black;
+    border-bottom: 1.5px solid #FFFFFF;
+    border-right: 1.5px solid #FFFFFF;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.memoList .note {
-    flex-grow: 9;
-}
-
 .button-list {
     padding: 0;
     margin: 0;
+    max-height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .button-list li {
@@ -66,7 +71,7 @@ button:active {
     cursor: pointer;
     width: 90%;
     list-style-type: none;
-    border-bottom: 1.5px dotted grey;
+    border-bottom: 1.5px dotted #888888;
     padding: 10px;
 }
 
@@ -76,7 +81,7 @@ button:active {
 }
 
 .button-list li:active {
-    background-color: #D3D3D3;
+    background-color: #555555;
 }
 
 .button-list .btnTitle {
@@ -103,5 +108,21 @@ button {
 }
 
 .mainContents::placeholder {
-    color: blue;
+    color: #AAAAAA;
+}
+
+.button-list li.selected {
+    background-color: yellow;
+}
+
+.memoList {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: #222222;
+}
+
+.note,
+.mainContents {
+    height: 100vh;
 }
